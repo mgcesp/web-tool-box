@@ -1,0 +1,40 @@
+.menu {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background: rgba(0,0,0,0.5);
+    overflow-y: hidden;
+    transition: 0.5s ease;
+}
+.menu__content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+.menu__content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.5s ease;
+    color: blue;
+}
+.menu__content .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: red;
+}
+#nav-menu:checked ~ .menu {
+    height: 100%;
+}
+#nav-menu:not(:checked) ~ .menu {
+    height: 0;
+}
